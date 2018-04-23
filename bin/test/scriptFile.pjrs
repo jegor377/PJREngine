@@ -1,0 +1,40 @@
+>settings
+	appName "Test app"
+	wydt "#Twoj ruch:"
+	bgColor 0
+	bgSong muz
+>dialogOptions
+	-test:druga
+		text "Tescik"
+		color 0
+	-test2:main
+		text "Drugi test"
+		color 4
+	-wyjdz:!exit
+		text "Wyjdz"
+		color 8
+>dialogs
+	-main
+		sprite test
+		text "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ornare consectetur purus eget sodales. Phasellus pellentesque posuere elit nec ullamcorper. Maecenas id viverra nisl, ut tempor sapien. Proin mauris justo, ullamcorper sed nibh vel, lacinia porttitor lacus. Maecenas a felis id dolor placerat ultrices. Cras auctor elit purus, vitae commodo leo tincidunt maximus. Mauris bibendum vehicula accumsan. Nam justo sem, vehicula ut dignissim a, tristique ut erat.\n\n\n\nSed nunc sapien, consequat et felis eu, vestibulum auctor velit. Curabitur interdum dolor rhoncus, interdum arcu sed, luctus tortor. Sed nec finibus leo. Aliquam vitae dolor orci. Vivamus cursus a nulla eu tristique. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ac nisi nec risus pellentesque egestas. Nulla pretium ac odio id egestas. Sed molestie nunc fringilla tristique gravida. Nulla vel pulvinar nisl. Vestibulum et quam interdum, ultricies justo quis, rutrum ipsum. Cras nec fermentum urna. Etiam non dignissim tortor, in ultricies dui. Fusce sit amet mauris a magna tempor aliquam nec in ex."
+		color 7
+		option test
+		option test2
+		option wyjdz
+	-druga
+		text "Druga"
+		sprite test2
+		narrator testMikro
+		color 5
+		option test2
+		option wyjdz
+	-!exit
+		text "Exit"
+		color 5
+		sprite test2
+>sprites
+	-test;assets\sprites\sprite.png
+	-test2;assets\sprites\sprite2.png
+>songs
+	-testMikro;assets\sounds\test.wav
+	-muz;assets\sounds\mus.wav
